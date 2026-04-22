@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_screen"
+    tools:context=".main.fragments.EditPersonalDetailsFragment">
+
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/transparent">
+
+        <RelativeLayout
+            android:id="@+id/btnBack"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_back_arrow"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_edit_personal_details"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/outfit_bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_line_colour"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:layout_below="@id/actionBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_update_your_details_to_recalculate_your_daily_calorie_needs"
+                android:textColor="@color/yellow_green_text"
+                android:textSize="14sp"
+                android:fontFamily="@font/outfit_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_gender"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:fontFamily="@font/outfit_medium"
+                android:layout_marginTop="30dp"/>
+
+            <LinearLayout
+                android:id="@+id/btnSelectGender"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_edit_txt"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/tvSelectGender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="gender"
+                    android:hint="@string/text_select_gender"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/edit_txt_hint"
+                    android:fontFamily="@font/outfit_regular"
+                    android:inputType="none" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivGenderDropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="0dp"
+                    android:src="@drawable/ic_dropdown"
+                    android:tint="@color/white"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_age"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:fontFamily="@font/outfit_medium"
+                android:layout_marginTop="18dp"/>
+
+            <LinearLayout
+                android:id="@+id/btnSelectAge"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_edit_txt"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/tvSelectAge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="age"
+                    android:hint="@string/text_select_age"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/edit_txt_hint"
+                    android:fontFamily="@font/outfit_regular"
+                    android:inputType="none" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivAgeDropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="0dp"
+                    android:src="@drawable/ic_dropdown"
+                    android:tint="@color/white"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_height"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:fontFamily="@font/outfit_medium"
+                android:layout_marginTop="18dp"/>
+
+            <LinearLayout
+                android:id="@+id/btnSelectHeight"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_edit_txt"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/tvSelectHeight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="age"
+                    android:hint="@string/text_select_height"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/edit_txt_hint"
+                    android:fontFamily="@font/outfit_regular"
+                    android:inputType="none" />
+
+                <TextView
+                    android:id="@+id/tvHeightUnits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_ft_in"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/outfit_medium" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivHeightDropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="0dp"
+                    android:src="@drawable/ic_drop_up_down"
+                    android:tint="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_weight"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:fontFamily="@font/outfit_medium"
+                android:layout_marginTop="18dp"/>
+
+            <LinearLayout
+                android:id="@+id/btnSelectWeight"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_edit_txt"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvSelectWeight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="age"
+                    android:hint="@string/text_select_weight"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/edit_txt_hint"
+                    android:fontFamily="@font/outfit_regular"
+                    android:inputType="none" />
+
+                <TextView
+                    android:id="@+id/tvWeightUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/outfit_medium"
+                    android:text="@string/text_lbs"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivWeightDropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="0dp"
+                    android:src="@drawable/ic_drop_up_down"
+                    android:tint="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_physical_activity"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:fontFamily="@font/outfit_medium"
+                android:layout_marginTop="18dp"/>
+
+            <LinearLayout
+                android:id="@+id/btnSelectPhysicalActivity"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_edit_txt"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/tvSelectPhysicalActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="gender"
+                    android:hint="@string/text_select_physical_activities"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/edit_txt_hint"
+                    android:fontFamily="@font/outfit_regular"
+                    android:inputType="none" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivGenderPhysicalActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="0dp"
+                    android:src="@drawable/ic_dropdown"
+                    android:tint="@color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bottom_buttons">
+
+        <RelativeLayout
+            android:id="@+id/btnFinish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_10rd"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvLetsStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_save"
+                android:textSize="16sp"
+                android:fontFamily="@font/outfit_bold"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

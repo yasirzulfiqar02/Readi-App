@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="18dp"
+    android:elevation="6dp"
+    android:layout_marginHorizontal="16dp"
+    android:background="@drawable/bg_6rd_fill">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivToast"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_angry"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:tint="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/ivToast"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:id="@+id/successText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_success"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/lato_bold"/>
+
+        <TextView
+            android:id="@+id/toastSuccessText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_otp_resent_successfully"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/lato_medium"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

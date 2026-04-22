@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.READIApp" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="Theme.READIApp" parent="Base.Theme.READIApp" />
+
+    <style name="TransparentBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="TransparentBottomSheet" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/TransparentBottomSheetStyle</item>
+    </style>
+
+    <style name="BottomNavTextInactive">
+        <item name="android:fontFamily">@font/outfit_medium</item>
+        <item name="android:textSize">10sp</item>
+
+    </style>
+
+    <style name="BottomNavTextActive">
+        <item name="android:fontFamily">@font/outfit_medium</item>
+        <item name="android:textSize">10sp</item>
+
+    </style>
+
+</resources>

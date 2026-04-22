@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "628272585012",
+    "project_id": "readiapp-7c721",
+    "storage_bucket": "readiapp-7c721.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628272585012:android:b28da057785258c68d2d61",
+        "android_client_info": {
+          "package_name": "com.readi.apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628272585012-308i3mdq2cbvgqv6d8q5uv4k4u3tnmho.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.readi.apps",
+            "certificate_hash": "e2d2ea737e5d3f5cfcd41857975714aa8d74d15b"
+          }
+        },
+        {
+          "client_id": "628272585012-gqgmrbj272at9mgm30ne4dgbluerfdog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhkiHbA9Fp7OB_YJqoPNsuPqitNiQiJOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628272585012-gqgmrbj272at9mgm30ne4dgbluerfdog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

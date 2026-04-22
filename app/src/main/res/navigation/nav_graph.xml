@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/caloriesFragment">
+
+    <fragment
+        android:id="@+id/caloriesFragment"
+        android:name="com.readi.apps.main.fragments.CaloriesFragment"
+        android:label="fragment_calories"
+        tools:layout="@layout/fragment_calories">
+        <action
+            android:id="@+id/action_caloriesFragment_to_editPersonalDetailsFragment"
+            app:destination="@id/editPersonalDetailsFragment"
+            app:enterAnim="@anim/right_to_left"
+            app:exitAnim="@anim/left_to_right"
+            app:popEnterAnim="@anim/activity_enter"
+            app:popExitAnim="@anim/activity_exit"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/recoveryFragment"
+        android:name="com.readi.apps.main.fragments.RecoveryFragment"
+        android:label="fragment_recovery"
+        tools:layout="@layout/fragment_recovery">
+
+        <action
+            android:id="@+id/action_recoveryFragment_to_ricoveryHistoryFragment"
+            app:destination="@id/ricoveryHistoryFragment"
+            app:enterAnim="@anim/right_to_left"
+            app:exitAnim="@anim/left_to_right"
+            app:popEnterAnim="@anim/activity_enter"
+            app:popExitAnim="@anim/activity_exit"/>
+        <action
+            android:id="@+id/action_recoveryFragment_to_recoverySubCategoryFragment"
+            app:destination="@id/recoverySubCategoryFragment"
+            app:enterAnim="@anim/right_to_left"
+            app:exitAnim="@anim/left_to_right"
+            app:popEnterAnim="@anim/activity_enter"
+            app:popExitAnim="@anim/activity_exit"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fitnessFragment"
+        android:name="com.readi.apps.main.fragments.FitnessFragment"
+        android:label="fragment_fitness"
+        tools:layout="@layout/fragment_fitness">
+        <action
+            android:id="@+id/action_fitnessFragment_to_onDemandWorkoutFragment"
+            app:destination="@id/onDemandWorkoutFragment"
+            app:enterAnim="@anim/right_to_left"
+            app:exitAnim="@anim/left_to_right"
+            app:popEnterAnim="@anim/activity_enter"
+            app:popExitAnim="@anim/activity_exit"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.readi.apps.main.fragments.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed"/>
+
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.readi.apps.main.fragments.MoreFragment"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more"/>
+    <fragment
+        android:id="@+id/ricoveryHistoryFragment"
+        android:name="com.readi.apps.main.fragments.RecoveryHistoryFragment"
+        android:label="fragment_ricovery_history"
+        tools:layout="@layout/fragment_ricovery_history" />
+    <fragment
+        android:id="@+id/recoverySubCategoryFragment"
+        android:name="com.readi.apps.main.fragments.RecoverySubCategoryFragment"
+        android:label="fragment_recovery_sub_category"
+        tools:layout="@layout/fragment_recovery_sub_category" >
+        <action
+            android:id="@+id/action_recoverySubCategoryFragment_to_introLetsStartFragment"
+            app:destination="@id/introLetsStartFragment"
+            app:enterAnim="@anim/right_to_left"
+            app:exitAnim="@anim/left_to_right"
+            app:popEnterAnim="@anim/activity_enter"
+            app:popExitAnim="@anim/activity_exit"/>
+    </fragment>
+    <fragment
+        android:id="@+id/introLetsStartFragment"
+        android:name="com.readi.apps.main.fragments.IntroLetsStartFragment"
+        android:label="fragment_intro_lets_start"
+        tools:layout="@layout/fragment_intro_lets_start" >
+        <action
+            android:id="@+id/action_introLetsStartFragment_to_workoutDetailFragment"
+            app:destination="@id/workoutDetailFragment"
+            app:enterAnim="@anim/right_to_left"
+            app:exitAnim="@anim/left_to_right"
+            app:popEnterAnim="@anim/activity_enter"
+            app:popExitAnim="@anim/activity_exit"/>
+    </fragment>
+    <fragment
+        android:id="@+id/workoutDetailFragment"
+        android:name="com.readi.apps.main.fragments.WorkoutDetailFragment"
+        android:label="fragment_workout_detail"
+        tools:layout="@layout/fragment_workout_detail" />
+    <fragment
+        android:id="@+id/editPersonalDetailsFragment"
+        android:name="com.readi.apps.main.fragments.EditPersonalDetailsFragment"
+        android:label="fragment_edit_personal_details"
+        tools:layout="@layout/fragment_edit_personal_details" />
+    <fragment
+        android:id="@+id/onDemandWorkoutFragment"
+        android:name="com.readi.apps.main.fragments.OnDemandWorkoutFragment"
+        android:label="fragment_on_demand_workout"
+        tools:layout="@layout/fragment_on_demand_workout" />
+
+</navigation>

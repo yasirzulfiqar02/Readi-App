@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.LoadingActivity">
+
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_readi"
+            android:textSize="28sp"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/outfit_bold"
+            android:textColor="@color/white"
+            android:layout_below="@id/actionBar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_working_on_your_plan"
+                android:textSize="18sp"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/outfit_medium"
+                android:textColor="@color/yellow_green_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_please_be_patient_we_are_currently_preparing_your_custom_workout_plan"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/outfit_regular"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/white" />
+
+            <ProgressBar
+                android:id="@+id/progressBarHorizontal"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="190dp"
+                android:layout_height="4dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/bg_progress_bar"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

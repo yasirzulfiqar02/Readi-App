@@ -1,0 +1,299 @@
+{
+  "startFlow": "start",
+  "flows": {
+    "start": [
+      {
+        "id": "q1",
+        "questionTitle": "Choose Your Background",
+        "questionSubtitle": "Select the background that best represents your experience. This helps personalize your training programs.",
+        "options": [
+          { "optionTitle": "Military", "nextFlow": "military_q2" },
+          { "optionTitle": "First Responder", "nextFlow": "first_responder" },
+          { "optionTitle": "Veteran", "nextFlow": "veteran" }
+        ]
+      }
+    ],
+
+    "military_q2": [
+      {
+        "id": "m_q2",
+        "questionTitle": "Choose Your Military Branch",
+        "questionSubtitle": "Which military branch would you like your training to be inspired by?",
+        "options": [
+          { "optionTitle": "Army", "nextFlow": "military_common_q3" },
+          { "optionTitle": "Navy", "nextFlow": "military_common_q3" },
+          { "optionTitle": "Air Force", "nextFlow": "military_common_q3" },
+          { "optionTitle": "Coast Guard", "nextFlow": "military_common_q3" },
+          { "optionTitle": "Space Force", "nextFlow": "military_common_q3" },
+          { "optionTitle": "Marine Corps", "nextFlow": "military_marine_q3" }
+        ]
+      }
+    ],
+
+    "military_common_q3": [
+      {
+        "id": "m_q3",
+        "questionTitle": "Age Bracket",
+        "questionSubtitle": "Creating progress with the best challenges for your stage of development.",
+        "options": [
+          { "optionTitle": "17-21", "nextFlow": "m_q4" },
+          { "optionTitle": "22-26", "nextFlow": "m_q4" },
+          { "optionTitle": "27-31", "nextFlow": "m_q4" },
+          { "optionTitle": "32-36", "nextFlow": "m_q4" },
+          { "optionTitle": "37-41", "nextFlow": "m_q4" },
+          { "optionTitle": "42-46", "nextFlow": "m_q4" },
+          { "optionTitle": "47-51", "nextFlow": "m_q4" },
+          { "optionTitle": "52-56", "nextFlow": "m_q4" },
+          { "optionTitle": "57-61", "nextFlow": "m_q4" },
+          { "optionTitle": "62+", "nextFlow": "m_q4" }
+        ]
+      }
+    ],
+
+    "military_marine_q3": [
+      {
+        "id": "marine_q3",
+        "questionTitle": "Age Bracket",
+        "questionSubtitle": "Creating progress with the best challenges for your stage of development.",
+        "options": [
+          { "optionTitle": "17-21", "nextFlow": "marine_q4" },
+          { "optionTitle": "22-26", "nextFlow": "marine_q4" },
+          { "optionTitle": "27-31", "nextFlow": "marine_q4" },
+          { "optionTitle": "32-36", "nextFlow": "marine_q4" },
+          { "optionTitle": "37-41", "nextFlow": "marine_q4" },
+          { "optionTitle": "42-46", "nextFlow": "marine_q4" },
+          { "optionTitle": "47-51", "nextFlow": "marine_q4" },
+          { "optionTitle": "52-56", "nextFlow": "marine_q4" },
+          { "optionTitle": "57-61", "nextFlow": "marine_q4" },
+          { "optionTitle": "62+", "nextFlow": "marine_q4" }
+        ]
+      },
+      {
+        "id": "marine_q4",
+        "questionTitle": "PT Assessment",
+        "questionSubtitle": "Select your branch to see the relevant physical training assessment.",
+        "options": [
+          { "optionTitle": "PFT (Physical Fitness Test)", "nextFlow": "m_q4" },
+          { "optionTitle": "CFT (Combat Fitness Test)", "nextFlow": "m_q4" }
+        ]
+      }
+    ],
+
+    "m_q4": [
+      {
+        "id": "m_q4",
+        "questionTitle": "Combat Specialty",
+        "questionSubtitle": "Are you in a combat specialty/MOS?",
+        "options": [
+          { "optionTitle": "Yes", "nextFlow": "m_q5" },
+          { "optionTitle": "No", "nextFlow": "m_q5" }
+        ]
+      }
+    ],
+
+    "m_q5": [
+      {
+        "id": "m_q5",
+        "questionTitle": "Equipment",
+        "questionSubtitle": "Choose your equipment to customize your military-style workouts.",
+        "options": [
+          { "optionTitle": "No Equipment", "nextFlow": "end" },
+          { "optionTitle": "Dumbbells", "nextFlow": "end" },
+          { "optionTitle": "Kettlebells", "nextFlow": "end" },
+          { "optionTitle": "Barbell and plates", "nextFlow": "end" },
+          { "optionTitle": "Full Gym", "nextFlow": "end" }
+        ]
+      }
+    ],
+
+    "first_responder": [
+      {
+        "id": "fr_q2",
+        "questionTitle": "Choose Your Profession",
+        "questionSubtitle": "Select the profession that best represents your role or interest.",
+        "options": [
+          { "optionTitle": "Law Enforcement", "nextFlow": "law_flow" },
+          { "optionTitle": "Firefighter", "nextFlow": "fire_flow" }
+        ]
+      }
+    ],
+
+    "law_flow": [
+      {
+        "id": "law_q3",
+        "questionTitle": "Type of Agency",
+        "questionSubtitle": "Select the agency or unit that best represents your role.",
+        "options": [
+          { "optionTitle": "Patrol / Deputy", "nextFlow": "law_q4" },
+          { "optionTitle": "SWAT / Tactical Team", "nextFlow": "law_q4" },
+          { "optionTitle": "Federal Agent", "nextFlow": "law_q4" },
+          { "optionTitle": "Corrections Officer", "nextFlow": "law_q4" },
+          { "optionTitle": "Detective / Investigator", "nextFlow": "law_q4" },
+          { "optionTitle": "Academy / Recruit", "nextFlow": "law_q4" }
+        ]
+      },
+      {
+        "id": "law_q4",
+        "questionTitle": "Age Bracket",
+        "questionSubtitle": "Creating progress with the best challenges for your stage of development.",
+        "options": [
+          { "optionTitle": "17-21", "nextFlow": "law_q5" },
+          { "optionTitle": "22-26", "nextFlow": "law_q5" },
+          { "optionTitle": "27-31", "nextFlow": "law_q5" },
+          { "optionTitle": "32-36", "nextFlow": "law_q5" },
+          { "optionTitle": "37-41", "nextFlow": "law_q5" },
+          { "optionTitle": "42-46", "nextFlow": "law_q5" },
+          { "optionTitle": "47-51", "nextFlow": "law_q5" },
+          { "optionTitle": "52-56", "nextFlow": "law_q5" },
+          { "optionTitle": "57-61", "nextFlow": "law_q5" },
+          { "optionTitle": "62+", "nextFlow": "law_q5" }
+        ]
+      },
+      {
+        "id": "law_q5",
+        "questionTitle": "Operational Demand",
+        "questionSubtitle": "Indicate how physically demanding your role is on a daily basis.",
+        "options": [
+          { "optionTitle": "High – Frequent foot pursuits and physical arrests.", "nextFlow": "law_q6" },
+          { "optionTitle": "Moderate – Mixed patrol and field duties.", "nextFlow": "law_q6" },
+          { "optionTitle": "Low – Mostly administrative or investigative work.", "nextFlow": "law_q6" }
+        ]
+      },
+      {
+        "id": "law_q6",
+        "questionTitle": "Equipment",
+        "questionSubtitle": "Choose your equipment to customize your military-style workouts.",
+        "options": [
+          { "optionTitle": "No Equipment", "nextFlow": "end" },
+          { "optionTitle": "Dumbbells", "nextFlow": "end" },
+          { "optionTitle": "Kettlebells", "nextFlow": "end" },
+          { "optionTitle": "Barbell and plates", "nextFlow": "end" },
+          { "optionTitle": "Full Gym", "nextFlow": "end" }
+        ]
+      }
+    ],
+
+    "fire_flow": [
+      {
+        "id": "fire_q3",
+        "questionTitle": "Department Type",
+        "questionSubtitle": "Select the fire department role that best fits your duties.",
+        "options": [
+          { "optionTitle": "Structural Firefighter", "nextFlow": "fire_q4" },
+          { "optionTitle": "Wildland Firefighter", "nextFlow": "fire_q4" },
+          { "optionTitle": "Volunteer Firefighter", "nextFlow": "fire_q4" },
+          { "optionTitle": "Fire Officer / Command", "nextFlow": "fire_q4" },
+          { "optionTitle": "Recruit / Academy", "nextFlow": "fire_q4" }
+        ]
+      },
+      {
+        "id": "fire_q4",
+        "questionTitle": "Age Bracket",
+        "questionSubtitle": "Creating progress with the best challenges for your stage of development.",
+        "options": [
+          { "optionTitle": "17-21", "nextFlow": "fire_q5" },
+          { "optionTitle": "22-26", "nextFlow": "fire_q5" },
+          { "optionTitle": "27-31", "nextFlow": "fire_q5" },
+          { "optionTitle": "32-36", "nextFlow": "fire_q5" },
+          { "optionTitle": "37-41", "nextFlow": "fire_q5" },
+          { "optionTitle": "42-46", "nextFlow": "fire_q5" },
+          { "optionTitle": "47-51", "nextFlow": "fire_q5" },
+          { "optionTitle": "52-56", "nextFlow": "fire_q5" },
+          { "optionTitle": "57-61", "nextFlow": "fire_q5" },
+          { "optionTitle": "62+", "nextFlow": "fire_q5" }
+        ]
+      },
+      {
+        "id": "fire_q5",
+        "questionTitle": "What Is Your Shift Schedule?",
+        "questionSubtitle": "Select the shift pattern that best reflects your current work schedule.",
+        "options": [
+          { "optionTitle": "24 on / 48 off", "nextFlow": "fire_q6" },
+          { "optionTitle": "24 on / 72 off", "nextFlow": "fire_q6" },
+          { "optionTitle": "48 on / 96 off", "nextFlow": "fire_q6" },
+          { "optionTitle": "Day shift", "nextFlow": "fire_q6" },
+          { "optionTitle": "Volunteer / Variable", "nextFlow": "fire_q6" }
+        ]
+      },
+      {
+        "id": "fire_q6",
+        "questionTitle": "Equipment",
+        "questionSubtitle": "Choose your equipment to customize your military-style workouts.",
+        "options": [
+          { "optionTitle": "No Equipment", "nextFlow": "end" },
+          { "optionTitle": "Dumbbells", "nextFlow": "end" },
+          { "optionTitle": "Kettlebells", "nextFlow": "end" },
+          { "optionTitle": "Barbell and plates", "nextFlow": "end" },
+          { "optionTitle": "Full Gym", "nextFlow": "end" }
+        ]
+      }
+    ],
+
+    "veteran": [
+      {
+        "id": "v_q2",
+        "questionTitle": "Service Background",
+        "questionSubtitle": "Select the military branch you have served in or are affiliated with.",
+        "options": [
+          { "optionTitle": "Army", "nextFlow": "v_q3" },
+          { "optionTitle": "Navy", "nextFlow": "v_q3" },
+          { "optionTitle": "Air Force", "nextFlow": "v_q3" },
+          { "optionTitle": "Marine Corps", "nextFlow": "v_q3" },
+          { "optionTitle": "Coast Guard", "nextFlow": "v_q3" },
+          { "optionTitle": "Space Force", "nextFlow": "v_q3" }
+        ]
+      },
+      {
+        "id": "v_q3",
+        "questionTitle": "Age Bracket",
+        "questionSubtitle": "Creating progress with the best challenges for your stage of development.",
+        "options": [
+          { "optionTitle": "17-21", "nextFlow": "v_q4" },
+          { "optionTitle": "22-26", "nextFlow": "v_q4" },
+          { "optionTitle": "27-31", "nextFlow": "v_q4" },
+          { "optionTitle": "32-36", "nextFlow": "v_q4" },
+          { "optionTitle": "37-41", "nextFlow": "v_q4" },
+          { "optionTitle": "42-46", "nextFlow": "v_q4" },
+          { "optionTitle": "47-51", "nextFlow": "v_q4" },
+          { "optionTitle": "52-56", "nextFlow": "v_q4" },
+          { "optionTitle": "57-61", "nextFlow": "v_q4" },
+          { "optionTitle": "62+", "nextFlow": "v_q4" }
+        ]
+      },
+      {
+        "id": "v_q4",
+        "questionTitle": "Current Fitness Level – Getting Back Into Training",
+        "questionSubtitle": "Select the option that best describes your current activity and fitness level.",
+        "options": [
+          { "optionTitle": "Moderately Active", "nextFlow": "v_q5" },
+          { "optionTitle": "Consistently Training", "nextFlow": "v_q5" },
+          { "optionTitle": "Highly Trained", "nextFlow": "v_q5" }
+        ]
+      },
+      {
+        "id": "v_q5",
+        "questionTitle": "Injury History",
+        "questionSubtitle": "Select the option that best describes any past or current injuries.",
+        "options": [
+          { "optionTitle": "No Major Injuries", "nextFlow": "v_q6" },
+          { "optionTitle": "Joint Issues", "nextFlow": "v_q6" },
+          { "optionTitle": "Back Issues", "nextFlow": "v_q6" },
+          { "optionTitle": "Multiple Areas", "nextFlow": "v_q6" },
+          { "optionTitle": "Prefer Low-Impact Training", "nextFlow": "v_q6" }
+        ]
+      },
+      {
+        "id": "v_q6",
+        "questionTitle": "Equipment",
+        "questionSubtitle": "Choose your equipment to customize your military-style workouts.",
+        "options": [
+          { "optionTitle": "No Equipment", "nextFlow": "end" },
+          { "optionTitle": "Dumbbells", "nextFlow": "end" },
+          { "optionTitle": "Kettlebells", "nextFlow": "end" },
+          { "optionTitle": "Barbell and plates", "nextFlow": "end" },
+          { "optionTitle": "Full Gym", "nextFlow": "end" }
+        ]
+      }
+    ]
+  }
+}

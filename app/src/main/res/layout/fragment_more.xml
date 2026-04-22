@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg_screen"
+    tools:context=".main.fragments.MoreFragment">
+
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/transparent"
+        android:paddingHorizontal="16dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_readi"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_12rd_more">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/profileImage"
+                        android:layout_width="65dp"
+                        android:layout_height="62dp"
+                        app:riv_corner_radius="16dp"
+                        android:src="@drawable/ic"
+                        app:riv_border_color="@color/profile_border_colour"
+                        app:riv_border_width="0.3dp"
+                        android:scaleType="centerCrop"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toStartOf="@+id/btnNext"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_toEndOf="@+id/profileImage">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_michael_dennington"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/outfit_semi_bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_fitness_handicap_54"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/outfit_medium" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btnNext"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:background="@drawable/bg_oval_btn"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next_grey"
+                            android:tint="@color/white"
+                            android:layout_centerInParent="true"/>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/primary_gold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <RelativeLayout
+                        android:id="@+id/icSetting"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/bg_icons_6rd">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_setting_2"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_manage_account"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/outfit_medium"
+                        android:layout_toEndOf="@+id/icSetting"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_toStartOf="@+id/ic_next_setting"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_next_setting"
+                        android:layout_width="9dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_next_grey"
+                        android:tint="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/primary_gold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <RelativeLayout
+                        android:id="@+id/icSubscription"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/bg_icons_6rd">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_setting"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_current_subscription"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/outfit_medium"
+                        android:layout_toEndOf="@+id/icSubscription"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_toStartOf="@+id/ic_next_Subscription"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_next_Subscription"
+                        android:layout_width="9dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_next_grey"
+                        android:tint="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="15dp"
+                android:background="@drawable/bg_12rd_more">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <RelativeLayout
+                        android:id="@+id/icShop"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/bg_icons_6rd">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_shop"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_current_subscription"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/outfit_medium"
+                        android:layout_toEndOf="@+id/icShop"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_toStartOf="@+id/ic_next_Shop"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_next_Shop"
+                        android:layout_width="9dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_next_grey"
+                        android:tint="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_12rd_more">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <RelativeLayout
+                        android:id="@+id/icWeightTracking"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/bg_icons_6rd">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_weight_track"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_weight_tracking"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/outfit_medium"
+                        android:layout_toEndOf="@+id/icWeightTracking"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_toStartOf="@+id/ic_next_weight"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_next_weight"
+                        android:layout_width="9dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_next_grey"
+                        android:tint="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/primary_gold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <RelativeLayout
+                        android:id="@+id/icWorkoutHistory"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/bg_icons_6rd">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_workout_history"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_workouts_history"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/outfit_medium"
+                        android:layout_toEndOf="@+id/icWorkoutHistory"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_toStartOf="@+id/ic_next_Workouts_History"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_next_Workouts_History"
+                        android:layout_width="9dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_next_grey"
+                        android:tint="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="15dp"
+                android:background="@drawable/bg_12rd_more">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <RelativeLayout
+                        android:id="@+id/icReview"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/bg_icons_6rd">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_white_star"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_give_review"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/outfit_medium"
+                        android:layout_toEndOf="@+id/icReview"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_toStartOf="@+id/ic_next_review"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_next_review"
+                        android:layout_width="9dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_next_grey"
+                        android:tint="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/primary_gold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <RelativeLayout
+                        android:id="@+id/icTerms"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/bg_icons_6rd">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_term_policy"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/terms_amp_policies_text"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/outfit_medium"
+                        android:layout_toEndOf="@+id/icTerms"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_toStartOf="@+id/ic_next_terms"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_next_terms"
+                        android:layout_width="9dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_next_grey"
+                        android:tint="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/primary_gold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <RelativeLayout
+                        android:id="@+id/icHelp"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/bg_icons_6rd">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_help_support"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_help_amp_support"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/outfit_medium"
+                        android:layout_toEndOf="@+id/icHelp"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_toStartOf="@+id/ic_next_help"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_next_help"
+                        android:layout_width="9dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_next_grey"
+                        android:tint="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/primary_gold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <RelativeLayout
+                        android:id="@+id/icShare"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/bg_icons_6rd">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_gift"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_share_with_friend"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/outfit_medium"
+                        android:layout_toEndOf="@+id/icShare"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_toStartOf="@+id/ic_next_share"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_next_share"
+                        android:layout_width="9dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_next_grey"
+                        android:tint="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/primary_gold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <RelativeLayout
+                        android:id="@+id/icSignOut"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/bg_icons_6rd">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_sign_out"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_share_with_friend"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/outfit_medium"
+                        android:layout_toEndOf="@+id/icSignOut"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_toStartOf="@+id/ic_next_sign_out"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_next_sign_out"
+                        android:layout_width="9dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_next_grey"
+                        android:tint="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="5">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvYoutube"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_our_youtube"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/outfit_medium"/>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.7dp"
+                        android:background="@color/white"
+                        android:layout_below="@id/tvYoutube"
+                        android:layout_alignStart="@id/tvYoutube"
+                        android:layout_alignEnd="@id/tvYoutube"/>
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_dot_white"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvInstagram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_our_instagram"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/outfit_medium"
+                        tools:ignore="TooManyViews" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.7dp"
+                        android:background="@color/white"
+                        android:layout_below="@id/tvInstagram"
+                        android:layout_alignStart="@id/tvInstagram"
+                        android:layout_alignEnd="@id/tvInstagram"/>
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_dot_white"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvFacebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_our_facebook"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/outfit_medium"/>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.7dp"
+                        android:background="@color/white"
+                        android:layout_below="@id/tvFacebook"
+                        android:layout_alignStart="@id/tvFacebook"
+                        android:layout_alignEnd="@id/tvFacebook"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text__2021_2025_readi_ltd_v0_9_5_95"
+                android:textColor="@color/yellow_green"
+                android:textSize="10sp"
+                android:fontFamily="@font/outfit_medium"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="100dp"
+                tools:ignore="SmallSp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:background="@drawable/bg_bottom_sheets">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_bottom_sheet"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_select_your_daily_activity_level"
+        android:textColor="@color/yellow_green_text"
+        android:textSize="16sp"
+        android:fontFamily="@font/outfit_semi_bold"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_select_your_activity_level_to_customize_your_military_fitness_plan_accurately"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:fontFamily="@font/outfit_regular"
+        android:layout_marginTop="5dp"
+        android:lineSpacingExtra="3dp"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/green_dark"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/llSelectors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp">
+
+        <RelativeLayout
+        android:id="@+id/rlActivity1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bs_unselected_activity"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/ivSedentary"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/tvActivityTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_sedentary"
+                android:textColor="@color/yellow_green_text"
+                android:textSize="16sp"
+                android:fontFamily="@font/outfit_bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_typical_activities_of_daily_life_such_as_gardening_no_lifting_household_tasks_light_activity_while_sitting_etc"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:fontFamily="@font/outfit_regular"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="3dp"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivSedentary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_empty_selector"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlActivity2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bs_unselected_activity"
+            android:padding="12dp"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/ivLowActive"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/tvActivityTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_low_active"
+                    android:textColor="@color/yellow_green_text"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/outfit_bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_low_active_typical_activities_of_daily_life_e_g_gardening_household_tasks_plus_30_to_60_minutes_of_moderate_activity_daily_e_g_cycling_leisurely_walking_3_4mph_etc"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/outfit_regular"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="3dp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivLowActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_empty_selector"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlActivity3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bs_unselected_activity"
+            android:padding="12dp"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/ivActive"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/tvActivityTitle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_active"
+                    android:textColor="@color/yellow_green_text"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/outfit_bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_active_typical_activities_of_daily_life_e_g_gardening_household_tasks_plus_more_than_60_minutes_of_moderate_activity_daily_e_g_cycling_leisurely_walking_3_4mph_etc"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/outfit_regular"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="3dp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_empty_selector"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlActivity4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bs_unselected_activity"
+            android:padding="12dp"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/ivVeryActive"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/tvActivityTitle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_very_active"
+                    android:textColor="@color/yellow_green_text"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/outfit_bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_very_active_typical_activities_of_daily_life_e_g_gardening_household_tasks_plus_more_than_60_minutes_of_moderate_activity_daily_plus_additional_60_minutes_of_vigorous_activity_e_g_chopping_wood_climbing_hills_cycling_moderately_jogging_or_120_minutes_of_additional_moderate_activity"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/outfit_regular"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="3dp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivVeryActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_empty_selector"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

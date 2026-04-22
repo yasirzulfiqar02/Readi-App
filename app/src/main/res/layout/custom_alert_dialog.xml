@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_24rd_custom_dialog"
+    android:paddingVertical="50dp"
+    android:paddingHorizontal="20dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cup"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_120rd"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_rectangle"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_session_complete"
+                android:textSize="10sp"
+                android:layout_marginStart="6dp"
+                android:fontFamily="@font/outfit_extra_bold"
+                android:textColor="@color/green_dark"
+                android:letterSpacing="0.2"
+                tools:ignore="SmallSp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_recovery_accomplished"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/outfit_bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_your_muscle_are_refreshed_and_ready_it_s_time_to_push_your_next_workout"
+            android:textColor="@color/yellow_green_text"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/outfit_regular" />
+
+        <RelativeLayout
+            android:id="@+id/btnDone"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_button_primary"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_done"
+                android:textSize="16sp"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/outfit_bold"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+</LinearLayout>

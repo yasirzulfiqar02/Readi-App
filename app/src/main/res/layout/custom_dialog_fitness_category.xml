@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_12rd_fitness_categories">
+
+    <RelativeLayout
+        android:id="@+id/rlRecommendedProgram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_recommended_program"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/outfit_semi_bold"
+            android:textColor="@color/white"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="6dp"
+            android:layout_toStartOf="@id/ic_target_arrow"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_target_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_target_arrow"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:background="@color/green_light_colour"
+        android:layout_width="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/rlAllPrograms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_all_programs"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/outfit_semi_bold"
+            android:textColor="@color/white"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="6dp"
+            android:layout_toStartOf="@+id/ic_layers"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_layers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_layers"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:background="@color/green_light_colour"
+        android:layout_width="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/rlOnDemand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_on_demand"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/outfit_semi_bold"
+            android:textColor="@color/white"
+            android:layout_marginEnd="6dp"
+            android:layout_toStartOf="@+id/ic_medal_reward"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_medal_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_medal_reward"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:background="@color/green_light_colour"
+        android:layout_width="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/rlMovementLibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_movement_library"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/outfit_semi_bold"
+            android:textColor="@color/white"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="6dp"
+            android:layout_toStartOf="@+id/ic_gym"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_gym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_gym"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

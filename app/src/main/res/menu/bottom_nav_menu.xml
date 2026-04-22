@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/caloriesFragment"
+        android:icon="@drawable/ic_calories"
+        android:title="@string/text_calories" />
+
+    <item
+        android:id="@+id/recoveryFragment"
+        android:icon="@drawable/ic_recovery"
+        android:title="@string/text_recovery" />
+
+    <item
+        android:id="@+id/fitnessFragment"
+        android:icon="@drawable/ic_fitness"
+        android:title="@string/text_fitness" />
+
+    <item
+        android:id="@+id/feedFragment"
+        android:icon="@drawable/ic_feed"
+        android:title="@string/text_feed" />
+
+    <item
+        android:id="@+id/moreFragment"
+        android:icon="@drawable/ic_more"
+        android:title="@string/text_more" />
+
+</menu>
